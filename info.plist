@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>bundleid</key>
+		<string>com.fancive.promptoptimizer</string>
+		<key>category</key>
+		<string>Productivity</string>
+		<key>connections</key>
+		<dict>
+			<key>09713311-1629-43DA-AFEC-04FE240EE12F</key>
+			<array />
+			<key>6007335A-1A97-4374-8840-F2C1043B657D</key>
+			<array>
+				<dict>
+					<key>destinationuid</key>
+					<string>EE8D2A18-1BEC-48D0-822D-C92B47529ADA</string>
+					<key>modifiers</key>
+					<integer>0</integer>
+					<key>modifiersubtext</key>
+					<string></string>
+					<key>vitoclose</key>
+					<false />
+				</dict>
+			</array>
+			<key>6EC1B68C-CB04-471D-B5E7-A23E93BF31DA</key>
+			<array>
+				<dict>
+					<key>destinationuid</key>
+					<string>6007335A-1A97-4374-8840-F2C1043B657D</string>
+					<key>modifiers</key>
+					<integer>0</integer>
+					<key>modifiersubtext</key>
+					<string></string>
+					<key>vitoclose</key>
+					<false />
+				</dict>
+			</array>
+		</dict>
+		<key>createdby</key>
+		<string>fancive</string>
+		<key>description</key>
+		<string></string>
+		<key>disabled</key>
+		<false />
+		<key>name</key>
+		<string>prompt-optimizer</string>
+		<key>objects</key>
+		<array>
+			<dict>
+				<key>config</key>
+				<dict>
+					<key>alfredfiltersresults</key>
+					<false />
+					<key>alfredfiltersresultsmatchmode</key>
+					<integer>0</integer>
+					<key>argumenttreatemptyqueryasnil</key>
+					<false />
+					<key>argumenttrimmode</key>
+					<integer>0</integer>
+					<key>argumenttype</key>
+					<integer>0</integer>
+					<key>escaping</key>
+					<integer>102</integer>
+					<key>queuedelaycustom</key>
+					<integer>3</integer>
+					<key>queuedelayimmediatelyinitially</key>
+					<true />
+					<key>queuedelaymode</key>
+					<integer>0</integer>
+					<key>queuemode</key>
+					<integer>1</integer>
+					<key>runningsubtext</key>
+					<string>optimizing ...</string>
+					<key>script</key>
+					<string>/Users/wujunchen/dev/mcd3/envs/py310/bin/python main.py optimize
+						"{query}" </string>
+					<key>scriptargtype</key>
+					<integer>0</integer>
+					<key>scriptfile</key>
+					<string></string>
+					<key>subtext</key>
+					<string></string>
+					<key>title</key>
+					<string>prompt optimaizer</string>
+					<key>type</key>
+					<integer>0</integer>
+					<key>withspace</key>
+					<true />
+				</dict>
+				<key>type</key>
+				<string>alfred.workflow.input.scriptfilter</string>
+				<key>uid</key>
+				<string>09713311-1629-43DA-AFEC-04FE240EE12F</string>
+				<key>version</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>config</key>
+				<dict>
+					<key>alfredfiltersresults</key>
+					<false />
+					<key>alfredfiltersresultsmatchmode</key>
+					<integer>0</integer>
+					<key>argumenttreatemptyqueryasnil</key>
+					<false />
+					<key>argumenttrimmode</key>
+					<integer>0</integer>
+					<key>argumenttype</key>
+					<integer>1</integer>
+					<key>escaping</key>
+					<integer>102</integer>
+					<key>keyword</key>
+					<string>po</string>
+					<key>queuedelaycustom</key>
+					<integer>3</integer>
+					<key>queuedelayimmediatelyinitially</key>
+					<true />
+					<key>queuedelaymode</key>
+					<integer>0</integer>
+					<key>queuemode</key>
+					<integer>1</integer>
+					<key>runningsubtext</key>
+					<string>optimizing ...</string>
+					<key>script</key>
+					<string>/Users/wujunchen/dev/mcd3/envs/py310/bin/python main.py "{query}"</string>
+					<key>scriptargtype</key>
+					<integer>0</integer>
+					<key>scriptfile</key>
+					<string></string>
+					<key>subtext</key>
+					<string></string>
+					<key>title</key>
+					<string>prompt optimaizer</string>
+					<key>type</key>
+					<integer>0</integer>
+					<key>withspace</key>
+					<true />
+				</dict>
+				<key>type</key>
+				<string>alfred.workflow.input.scriptfilter</string>
+				<key>uid</key>
+				<string>6EC1B68C-CB04-471D-B5E7-A23E93BF31DA</string>
+				<key>version</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>config</key>
+				<dict>
+					<key>concurrently</key>
+					<false />
+					<key>escaping</key>
+					<integer>102</integer>
+					<key>script</key>
+					<string>/Users/wujunchen/dev/mcd3/envs/py310/bin/python main.py optimize "$1"</string>
+					<key>scriptargtype</key>
+					<integer>1</integer>
+					<key>scriptfile</key>
+					<string></string>
+					<key>type</key>
+					<integer>0</integer>
+				</dict>
+				<key>type</key>
+				<string>alfred.workflow.action.script</string>
+				<key>uid</key>
+				<string>6007335A-1A97-4374-8840-F2C1043B657D</string>
+				<key>version</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>config</key>
+				<dict>
+					<key>lastpathcomponent</key>
+					<false />
+					<key>onlyshowifquerypopulated</key>
+					<false />
+					<key>removeextension</key>
+					<false />
+					<key>text</key>
+					<string>Optimized prompt copied to clipboard. Variables: {var:variables}</string>
+					<key>title</key>
+					<string>prompt ompimized successfully</string>
+				</dict>
+				<key>type</key>
+				<string>alfred.workflow.output.notification</string>
+				<key>uid</key>
+				<string>EE8D2A18-1BEC-48D0-822D-C92B47529ADA</string>
+				<key>version</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>readme</key>
+		<string></string>
+		<key>uidata</key>
+		<dict>
+			<key>09713311-1629-43DA-AFEC-04FE240EE12F</key>
+			<dict>
+				<key>xpos</key>
+				<real>485</real>
+				<key>ypos</key>
+				<real>145</real>
+			</dict>
+			<key>6007335A-1A97-4374-8840-F2C1043B657D</key>
+			<dict>
+				<key>xpos</key>
+				<real>490</real>
+				<key>ypos</key>
+				<real>285</real>
+			</dict>
+			<key>6EC1B68C-CB04-471D-B5E7-A23E93BF31DA</key>
+			<dict>
+				<key>xpos</key>
+				<real>245</real>
+				<key>ypos</key>
+				<real>275</real>
+			</dict>
+			<key>EE8D2A18-1BEC-48D0-822D-C92B47529ADA</key>
+			<dict>
+				<key>xpos</key>
+				<real>710</real>
+				<key>ypos</key>
+				<real>295</real>
+			</dict>
+		</dict>
+		<key>userconfigurationconfig</key>
+		<array />
+		<key>variables</key>
+		<key>variablesdontexport</key>
+		<array>
+			<string>ANTHROPIC_API_KEY</string>
+		</array>
+		<key>version</key>
+		<string>0.1</string>
+		<key>webaddress</key>
+		<string>github.com/fancive</string>
+	</dict>
+</plist>

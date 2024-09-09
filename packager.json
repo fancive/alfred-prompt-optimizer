@@ -1,0 +1,11 @@
+{
+    "export_files": [
+        "promptoptimizer.alfredworkflow"
+    ],
+    "bundle_id": "com.fancive.promptoptimizer",
+    "resources": [
+        "icon.png",
+        "*.py",
+        "*.txt"
+    ]
+}
